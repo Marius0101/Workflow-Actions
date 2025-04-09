@@ -1,0 +1,16 @@
+name: test
+on: 
+    workflow_dispatch:
+permissions:
+    pull-requests: write
+jobs:
+  Build_development:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        uses: Marius0101/create-pull-request
+        with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+            title: 'Add new feature' 
+            head: 'feature/add-invoke-github-action-function' 
+            base: 'develop' 
