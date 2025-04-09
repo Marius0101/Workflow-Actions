@@ -10,7 +10,7 @@ jobs:
       - name: test
         uses: Marius0101/create-pull-request@v1
         with:
-            token: ${{ secrets.GITHUB_TOKEN }}
+            token: ${{ secrets.TOKEN }}
             title: 'Add new feature' 
             head: 'feature/add-invoke-github-action-function' 
             base: 'develop' 
