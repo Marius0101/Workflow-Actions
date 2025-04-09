@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test
-        uses: Marius0101/create-pull-request
+        uses: Marius0101/create-pull-request@v1
         with:
             token: ${{ secrets.GITHUB_TOKEN }}
             title: 'Add new feature' 
